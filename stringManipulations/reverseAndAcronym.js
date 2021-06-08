@@ -10,7 +10,7 @@ function reverseString(string){
 }
 console.log(reverseString("abcdefg")); 
 
-// ALTERNATE:
+// ALTERNATE SOLUTION:
 function reverseStr(str){
     var letterArr = str.split('');
     for(let i = 0; i < Math.floor(letterArr.length/2); i++){
@@ -38,7 +38,7 @@ function acronym(string){
 }
 console.log(acronym("live from saturday night live"));
 
-// ALTERNATE:
+// ALTERNATE SOLUTION:
 function acro(string){
     var list = string.split(" ")
     var returnString = ""
