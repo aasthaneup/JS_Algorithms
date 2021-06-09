@@ -8,7 +8,9 @@ function reverseString(string){
     }
     return revString;
 }
-console.log(reverseString("abcdefg")); 
+console.log("Reverse String")
+console.log(reverseString("abcdefg"));
+console.log("===================================")
 
 // ALTERNATE SOLUTION:
 function reverseStr(str){
@@ -20,7 +22,9 @@ function reverseStr(str){
     }
     console.log(letterArr.join(''))
 }
+console.log("Reverse String Method 2")
 reverseStr("abcdefg")
+console.log("===================================")
 
 // GIVEN A STRING, RETURN THE ACRONYM OF THAT STRING
 // GIVEN "LIVE FROM SATURDAY NIGHT LIVE"
@@ -36,7 +40,9 @@ function acronym(string){
     acr = acr.toUpperCase();
     return acr;
 }
+console.log("Acronym 1")
 console.log(acronym("live from saturday night live"));
+console.log("===================================")
 
 // ALTERNATE SOLUTIONS:
 function acro(string){
@@ -47,8 +53,9 @@ function acro(string){
     }
     console.log(returnString);
 }
+console.log("Acronym 2")
 acro("live from saturday night live")
-
+console.log("===================================")
 
 // CHECK IF THE PARENTHESES ARE BUILT IN CORRECT OPENING/CLOSING PAIRS
 // RETURN TRUE/FALSE
@@ -80,7 +87,40 @@ function parensValid(string) {
         return false;
     }
 }
+console.log("Valid sequence of parantheses")
 console.log(parensValid("(())()"));
 // ---> true
 console.log(parensValid(")()()"));
 //  ---> false
+console.log("===================================")
+
+// TAKES IN A SINGLE STRING AND RETURNS TRUE/FALSE WHETHER OR NOT ITS A PALLINDROME 
+
+function isPalindrome(string){
+    // your code here
+    var paliString = "";
+    for(var i = (string.length)-1; i>= 0;i--){
+        paliString = paliString+string[i];
+    }
+    // console.log("Spelled forward: "+string);
+    // console.log("Spelled backward: "+paliString);
+    if(string==paliString){
+        return true
+    }
+    else{
+        return false
+    }
+}
+console.log("Is it a Palindrome?")
+console.log("Its a palindrome--> "+isPalindrome("tacocat")) ;
+console.log(isPalindrome('madam'))
+// --> true
+console.log(isPalindrome('tacocat'));
+// --> true
+console.log(isPalindrome('abba'));
+// --> true
+console.log(isPalindrome("someone"));
+// --> false
+console.log(isPalindrome("already"));
+// --> false
+console.log("===================================")
