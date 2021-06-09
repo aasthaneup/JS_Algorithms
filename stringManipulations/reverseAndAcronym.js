@@ -61,7 +61,6 @@ console.log("===================================")
 // RETURN TRUE/FALSE
 
 function parensValid(string) {
-    // your code here
     var arr =[];
     for(var i = 0; i< string.length;i++){
         if(string[i]=="("){
@@ -97,7 +96,6 @@ console.log("===================================")
 // TAKES IN A SINGLE STRING AND RETURNS TRUE/FALSE WHETHER OR NOT ITS A PALLINDROME 
 
 function isPalindrome(string){
-    // your code here
     var paliString = "";
     for(var i = (string.length)-1; i>= 0;i--){
         paliString = paliString+string[i];
