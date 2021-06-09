@@ -38,7 +38,7 @@ function acronym(string){
 }
 console.log(acronym("live from saturday night live"));
 
-// ALTERNATE SOLUTION:
+// ALTERNATE SOLUTIONS:
 function acro(string){
     var list = string.split(" ")
     var returnString = ""
@@ -48,3 +48,39 @@ function acro(string){
     console.log(returnString);
 }
 acro("live from saturday night live")
+
+
+// CHECK IF THE PARENTHESES ARE BUILT IN CORRECT OPENING/CLOSING PAIRS
+// RETURN TRUE/FALSE
+
+function parensValid(string) {
+    // your code here
+    var arr =[];
+    for(var i = 0; i< string.length;i++){
+        if(string[i]=="("){
+            arr.push("(");
+            // console.log("time"+i+"pushed (");
+        }
+        else if(string[i]==")"){
+            if(arr[arr.length-1]!=undefined && arr[arr.length-1]!=")"){
+                arr.pop();
+                // console.log("time"+i+"popped");
+            }
+            else{
+                arr.push(")");
+                // console.log("time"+i+"pushed )");
+                
+            }
+        }
+    }
+    if(arr[0]==undefined){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+console.log(parensValid("(())()"));
+// ---> true
+console.log(parensValid(")()()"));
+//  ---> false
