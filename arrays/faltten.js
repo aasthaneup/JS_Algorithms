@@ -6,7 +6,7 @@
 function flatten(arr) {
     var newArr = [];
     for (var i = 0; i< arr.length; i++){
-        if(arr[i].length != 0 && arr[i]!=undefined && arr[i][1]==undefined){
+        if(arr[i].length != 0 && arr[i]!=undefined && arr[i][0]==undefined){
         newArr.push(arr[i])
         }
         else{
@@ -42,3 +42,7 @@ console.log("Solution 1")
 console.log(flatten([1, [2,3], 4, []]))
 console.log("Solution 2")
 console.log(falttenArray([1, [2,3], 4, []]))
+console.log("Solution 1")
+console.log(flatten([1, [2,3,5], 4, [7,9]]))
+console.log("Solution 2")
+console.log(falttenArray([1, [2,3,5], 4, [7,9]]))
