@@ -36,7 +36,11 @@ function selectionSort(arr){
     }
     return arr;
 }
-console.log("Bubble sort")
+console.log("===============")
+console.log("Bubble sort -->")
+console.log("===============")
 console.log(bubbleSort([5,2,1,8,9,7,3,0,-1,15,4]));
-console.log("Selection sort")
+console.log("==================")
+console.log("Selection sort -->")
+console.log("==================")
 console.log(selectionSort([4,2,6,9,1,5,8,0,-1,3]));
