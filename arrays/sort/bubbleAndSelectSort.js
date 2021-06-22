@@ -1,5 +1,5 @@
 // Bubble Sort:
-
+// ----------------
 function bubbleSort(arr){
     var len = arr.length;
     while(len>1){
@@ -16,6 +16,7 @@ function bubbleSort(arr){
 }
 
 // Selection Sort:
+// ----------------
 
 function selectionSort(arr){
     var min = 0;
