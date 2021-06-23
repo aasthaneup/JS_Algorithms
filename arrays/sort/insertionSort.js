@@ -1,5 +1,6 @@
 
 // /Insertion Sort
+// ----------------
 // Given an array of numbers, sort the numbers by placing values into their correct position at the front (sorted part) of the array
 // Ex:
 // [9,5,2,7,1] -> [5,9,2,7,1] -> [2,5,9,7,1] -> [2,5,7,9,1] -> [1,2,5,7,9]
