@@ -19,5 +19,41 @@ const unionArray = (arr1, arr2) => {
     }
     return arr3;
 }
+console.log("=========Solution 1==========")
 console.log(unionArray([1,2,2,3,4],[1,2,5,7]))
 console.log(unionArray([2,3,4,4,6] , [1,2,4,4,4,4,7]))
+
+// ALTERNATE SOLUTION:
+const unionArray2 = (arr1, arr2) => {
+    var result = [];
+    var i = 0;
+    var j = 0;
+    while(i < arr1.length && j < arr2.length) {
+        if(arr1[i] == arr2[j]) {
+            result.push(arr1[i]);
+            i++;
+            j++;
+        } else if(arr1[i] < arr2[j]) {
+            result.push(arr1[i]);
+            i++;
+        } else if(arr1[i] > arr2[j]) {
+            result.push(arr2[j]);
+            j++;
+        }
+    }
+    if(i < arr1.length) {
+        while(i < arr1.length){
+            result.push(arr1[i]);
+            i++;
+        }
+    } else if(j < arr2.length) {
+        while(j < arr2.length) {
+            result.push(arr2[j]);
+            j++;
+        }
+    }
+    return result;
+}
+console.log("=========Solution 2==========")
+console.log(unionArray2([1,2,2,3,4],[1,2,5,7]))
+console.log(unionArray2([2,3,4,4,6] , [1,2,4,4,4,4,7]))
